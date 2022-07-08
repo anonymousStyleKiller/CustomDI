@@ -2,7 +2,7 @@
 
 namespace DI.Interfaces;
 
-internal interface IContainerBuilder
+public interface IContainerBuilder
 {
     void Register(ServiceDescriptor serviceDescriptor);
     IContainer Build();

@@ -1,6 +1,6 @@
 ﻿namespace DI.Interfaces;
 
-internal interface IContainer
+public interface IContainer
 {
     IScope CreateScope();
 }

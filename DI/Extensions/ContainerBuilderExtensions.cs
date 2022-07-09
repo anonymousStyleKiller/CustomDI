@@ -85,10 +85,10 @@ public static class ContainerBuilderExtensions
 
     #endregion
 
-    #region InsranceSingleton
+    #region InstanceSingleton
 
-    public static IContainerBuilder RegisterSingleton(this IContainerBuilder builder, Type service, object instance)
-        => builder.RegisterInstance(service, instance);
+    public static IContainerBuilder RegisterSingleton<T>(this IContainerBuilder builder, object instance)
+        => builder.RegisterInstance(typeof(T), instance);
 
     #endregion
 }

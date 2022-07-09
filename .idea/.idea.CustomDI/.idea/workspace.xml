@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1041a99-32cf-47d9-99df-ee41a2e15728" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DI/Controllers/Controller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Helpers/Interfaces/IHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Helpers/Services/Helper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Interfaces/Services/IAnotherService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Interfaces/Services/IService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Models/Container.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Models/Scope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Services/AnotherServiceInstance.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Services/Service.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/ContainerBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/ContainerBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Extensions/ContainerBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Extensions/ContainerBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Interfaces/IContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Interfaces/IContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DI/Models/Container.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/Container.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DI/Models/Scope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/Scope.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +19,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9d9faea5e6ed6438a777ef8c6eed41261f81d8e86488ed923ad92564f54e/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
@@ -44,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="DI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -85,7 +78,12 @@
       <workItem from="1657216946010" duration="2895000" />
       <workItem from="1657255394837" duration="1710000" />
       <workItem from="1657346275357" duration="5344000" />
-      <workItem from="1657355242066" duration="1027000" />
+      <workItem from="1657355242066" duration="1721000" />
+      <workItem from="1657360458312" duration="34000" />
+      <workItem from="1657360825481" duration="251000" />
+      <workItem from="1657361152205" duration="5000" />
+      <workItem from="1657381049167" duration="2094000" />
+      <workItem from="1657387310378" duration="1565000" />
     </task>
     <task id="LOCAL-00001" summary="Base prototype">
       <created>1657223331232</created>
@@ -101,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657257082862</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Base implementation of DI">
+      <created>1657356431205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657356431205</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +129,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Base prototype" />
     <MESSAGE value="The methods of extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="The methods of extensions" />
+    <MESSAGE value="Base implementation of DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base implementation of DI" />
   </component>
 </project>

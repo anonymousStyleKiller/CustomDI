@@ -6,10 +6,11 @@ using DI.Interfaces;
 
 namespace DI.Models;
 
-public class Container : IContainer
+public class Container : IContainer, IDisposable, IAsyncDisposable
 {
     private ImmutableDictionary<Type, ServiceDescriptor> Descriptors { get; }
     private readonly ConcurrentDictionary<Type, Func<IScope, object>> _buildActivator = new();
+
     public readonly Scope _rootScope;
 
     public Container(IEnumerable<ServiceDescriptor> descriptors)
@@ -56,5 +57,15 @@ public class Container : IContainer
     {
         Descriptors.TryGetValue(service, out var result);
         return result;
+    }
+
+    public void Dispose()
+    {
+        _rootScope.Dispose();
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        return _rootScope.DisposeAsync();
     }
 }

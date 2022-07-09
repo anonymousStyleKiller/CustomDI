@@ -1,6 +1,6 @@
 ﻿namespace DI.Interfaces;
 
-public interface IContainer
+public interface IContainer : IDisposable, IAsyncDisposable
 {
     IScope CreateScope();
 }

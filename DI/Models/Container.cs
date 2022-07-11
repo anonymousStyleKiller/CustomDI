@@ -8,13 +8,14 @@ namespace DI.Models;
 
 public class Container : IContainer, IDisposable, IAsyncDisposable
 {
+    private readonly IActivationBuilder _builder;
     private ImmutableDictionary<Type, ServiceDescriptor> Descriptors { get; }
     private readonly ConcurrentDictionary<Type, Func<IScope, object>> _buildActivator = new();
-
     public readonly Scope _rootScope;
 
-    public Container(IEnumerable<ServiceDescriptor> descriptors)
+    public Container(IEnumerable<ServiceDescriptor> descriptors, IActivationBuilder builder)
     {
+        _builder = builder;
         Descriptors = descriptors.ToImmutableDictionary(x => x.ServiceType);
         _rootScope = new Scope(this);
     }
@@ -31,21 +32,7 @@ public class Container : IContainer, IDisposable, IAsyncDisposable
 
         if (descriptor is InstanceBasedServiceDescriptor ib) return _ => ib.Instance;
         if (descriptor is FactoryBasedServiceDescriptor fb) return _ => fb.Factory(scope);
-        var tb = (TypeBasedServiceDescriptor)descriptor;
-
-        var constructorInfo =
-            tb.ImplementationType.GetConstructors(BindingFlags.Public | BindingFlags.Instance).Single();
-        var parameters = constructorInfo.GetParameters();
-        return s =>
-        {
-            var parametersForConstructor = new object[parameters.Length];
-            for (var i = 0; i < parameters.Length; i++)
-            {
-                parametersForConstructor[i] = CreateInstance(parameters[i].ParameterType, scope);
-            }
-
-            return constructorInfo.Invoke(parametersForConstructor);
-        };
+        return _builder.BuildActivation(descriptor);
     }
 
     public object CreateInstance(Type service, IScope scope)

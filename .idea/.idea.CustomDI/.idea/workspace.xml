@@ -4,12 +4,13 @@
     <projectFile>DI/DI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1041a99-32cf-47d9-99df-ee41a2e15728" name="Changes" comment="Validation of DI scoped">
+    <list default="true" id="a1041a99-32cf-47d9-99df-ee41a2e15728" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DI/Interfaces/IActivationBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DI/Models/ActivationBuilder/BaseActivationBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DI/Models/ActivationBuilder/ReflectionBasedActivationBuild.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Interfaces/IContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Interfaces/IContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Interfaces/IScope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Interfaces/IScope.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DI/Models/Container.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/Container.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Models/Scope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/Scope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DI/Models/ContainerBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/ContainerBuilder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,6 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Projects/OpenSources/CustomDI/DI/Models/Container.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9d9faea5e6ed6438a777ef8c6eed41261f81d8e86488ed923ad92564f54e/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -40,16 +40,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="DI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -86,7 +86,11 @@
       <workItem from="1657360825481" duration="251000" />
       <workItem from="1657361152205" duration="5000" />
       <workItem from="1657381049167" duration="2094000" />
-      <workItem from="1657387310378" duration="4572000" />
+      <workItem from="1657387310378" duration="5702000" />
+      <workItem from="1657398783405" duration="388000" />
+      <workItem from="1657440817076" duration="611000" />
+      <workItem from="1657441640476" duration="1381000" />
+      <workItem from="1657564105907" duration="1618000" />
     </task>
     <task id="LOCAL-00001" summary="Base prototype">
       <created>1657223331232</created>
@@ -116,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657388960259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Disposable objects">
+      <created>1657394013246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657394013246</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +152,7 @@
     <MESSAGE value="The methods of extensions" />
     <MESSAGE value="Base implementation of DI" />
     <MESSAGE value="Validation of DI scoped" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation of DI scoped" />
+    <MESSAGE value="Disposable objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disposable objects" />
   </component>
 </project>

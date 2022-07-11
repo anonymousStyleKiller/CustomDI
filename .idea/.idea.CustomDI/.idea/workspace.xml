@@ -4,11 +4,9 @@
     <projectFile>DI/DI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1041a99-32cf-47d9-99df-ee41a2e15728" name="Changes" comment="Lambda Activation Builder">
-      <change afterPath="$PROJECT_DIR$/DI/Benchmarks/ContainerBenchmark.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DI/Models/ActivationBuilder/ReflectionBasedActivationBuilder.cs" afterDir="false" />
+    <list default="true" id="a1041a99-32cf-47d9-99df-ee41a2e15728" name="Changes" comment="Benchmarks">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CustomDI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DI/Models/ActivationBuilder/LambdaActivationBuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Models/ActivationBuilder/LambdaActivationBuild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DI/Benchmarks/ContainerBenchmark.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DI/Benchmarks/ContainerBenchmark.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +87,7 @@
       <workItem from="1657398783405" duration="388000" />
       <workItem from="1657440817076" duration="611000" />
       <workItem from="1657441640476" duration="1381000" />
-      <workItem from="1657564105907" duration="4032000" />
+      <workItem from="1657564105907" duration="5073000" />
     </task>
     <task id="LOCAL-00001" summary="Base prototype">
       <created>1657223331232</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657565938693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Benchmarks">
+      <created>1657569722131</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657569722131</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +165,7 @@
     <MESSAGE value="Validation of DI scoped" />
     <MESSAGE value="Disposable objects" />
     <MESSAGE value="Lambda Activation Builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lambda Activation Builder" />
+    <MESSAGE value="Benchmarks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Benchmarks" />
   </component>
 </project>
